@@ -1,0 +1,13 @@
+.card__palette{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px;
+    img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    max-height: 175px;
+    }
+}  

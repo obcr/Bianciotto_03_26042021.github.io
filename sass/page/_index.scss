@@ -1,0 +1,29 @@
+.search-bar {
+    background-color: $color-back-light;
+}
+
+.menu, #container {  
+    background-color: $color-back-dark;
+}
+
+.footer {
+    background-color: $color-back-footer;
+}
+
+.filter__select {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 285px;
+    h1,h2 {
+        text-align: center;
+    }
+}
+

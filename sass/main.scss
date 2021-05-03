@@ -1,6 +1,9 @@
 @import "./base/base";
 @import "./base/typography";
-
-@import "./pages/_index";
-
+@import "./compoment/button";
+@import "./compoment/card";
+@import "./compoment/search";
+@import "./utils/variable";
+@import "./page/index";
+@import "./page/menu";
 
