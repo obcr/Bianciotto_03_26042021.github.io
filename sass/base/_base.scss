@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff00b3;
+  }

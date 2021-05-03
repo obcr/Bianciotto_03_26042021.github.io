@@ -1,15 +1,14 @@
-*
-{
-	box-sizing: border-box;
+.card__palette{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-body
-{
-    margin: 0;
-}
-
-header, #filter, #container
-{
-    max-width: 375px;
-    margin: auto;
+.card__palette--img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  max-height: 175px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
