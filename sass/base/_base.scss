@@ -4,13 +4,7 @@ body {
     margin: auto;
 }
 
-Header, .menu, .filter, #container, .footer {
+header {
     display: flex;
-    Flex-direction : column;
-    width: 100%;
-    margin: 0;
-    }
-
-.nounderline{
-    text-decoration: none;
-    }
+    flex-direction: column;
+}

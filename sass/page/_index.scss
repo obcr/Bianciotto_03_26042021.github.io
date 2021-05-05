@@ -1,13 +1,5 @@
-.search-bar {
-    background-color: $color-back-light;
-}
-
-.menu, #container {  
+#container {  
     background-color: $color-back-dark;
-}
-
-.footer {
-    background-color: $color-back-footer;
 }
 
 .filter__select {
@@ -15,15 +7,28 @@
     flex-direction: row;
 }
 
-
-
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 285px;
-    h1,h2 {
+    background-color: #DCDCDC;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding-bottom: 30px;
+    h1 {
+        font-size: 29px;
         text-align: center;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    h2 {
+        font-size: 18px;
+        text-align: center;
+        margin: auto;
     }
 }
+
 

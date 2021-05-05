@@ -2,7 +2,7 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    object-fit: contain;
+    object-fit: cover;
     margin-left: 20px;
     margin-right: 20px;
     img {
@@ -10,4 +10,17 @@
     border-top-right-radius: 1em;
     max-height: 175px;
     }
+    figcaption {
+        background-color: #fff;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
 }  
+
+.name {
+    display: flex;
+    flex-direction: column;
+    h3, p {
+        margin: 0%;
+    }
+}

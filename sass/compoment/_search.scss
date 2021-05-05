@@ -1,4 +1,32 @@
+$color-back-light:  #C0C0C0;
+$color-back-light-m:  #ebebeb;
+
 .search-bar{
-    display:flex;
-    flex-direction: row;
+    height: 50px;
+    display: flex;
+    background-color: $color-back-light-m;
 }
+
+.search-bar__form {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-right: 30px;
+    i {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 1.2em;
+    }
+}
+
+.search-bar__form--field {
+    input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    font-size: 17px;
+    }
+}
+
+
+

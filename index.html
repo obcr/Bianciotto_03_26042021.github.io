@@ -14,52 +14,62 @@
 <!-- Header -->
 
     <header>
-
-        <div id="navbar">
-            <div class="logo">
-                <div class="logo__header">
-                    <a href="index.html"><img src="public/img/ohmyfood@2x.svg" alt="ohmyfood"></a>
-                </div>
-            </div>    
-                <div class="search-bar">
-                    <span class="search-bar__picto"><i class="fas fa-map-marker-alt"></i></span>
-                        <form method="get" action="search">
-                        <input type="search" placeholder="" value="Paris, Belleville">
-                        </form>
-                </div> 
+        <div class="logo">
+            <div class="logo__header">
+                <a href="index.html"><img src="public/img/ohmyfood@2x.svg" alt="ohmyfood"></a>
+            </div>
         </div>
+            <div id="navbar">
+                    <div class="search-bar">
+                        <div class="search-bar__form">
+                        <i class="fas fa-map-marker-alt"></i>
+                            <form method="get" action="search">
+                                <div class="search-bar__form--field"><input type="search" placeholder="" value="Paris, Belleville"></div>
+                            </form>
+                        </div> 
+                    </div> 
+            </div>
     </header>
 
 <!-- Section 1 -->
 
     <div class="menu">
         <h1>Réservez le menu qui vous convient</h1><br>
-        <h2>Découvrez des restaurants déxception, séléctionnés par nos soins</h2>
+        <h2>Découvrez des restaurants d'éxception, séléctionnés par nos soins</h2>
             <div class="btn">
-                    <p><a href="#" class="nounderline">Explorer nos restaurants</a></p>
+                <a href="https://google.fr">Explorer nos restaurants</a>
             </div>
     </div>   
 
-<!-- Section 2 -->  
+<!-- Aside -->  
 
-<div class="filter">
-    <div class="filter--title">Fonctionnement</div>
-    <div class="filter__select">
-        <span class="filter__select--number">1</span>
-        <div class="filter__select--icon"><i class="fas fa-mobile-alt"></i></div>
-        <div class="filter__select--font">Choisissez un restaurant</div>
+<aside>
+    <div id="asidefilter">
+        <h3>Fonctionnement</h3>
+                <div class="filter">
+                    <div class="filter__num">1</div>
+                        <div class="btn-filter">
+                            <i class="fas fa-mobile-alt"></i>
+                                <p><a href="#" class="nounderline">Choisissez un restaurant</a></p>
+                            </div>
+                </div>
+                    <div class="filter">
+                        <div class="filter__num">2</div>
+                            <div class="btn-filter">
+                                <i class="fas fa-list"></i>
+                                    <p><a href="#" class="nounderline">Composez un menu</a></p>
+                                </div>
+                    </div>
+                        <div class="filter">
+                            <div class="filter__num">3</div>
+                                <div class="btn-filter">
+                                    <i class="fas fa-store"></i>
+                                        <p><a href="#" class="nounderline">Déguster au restaurant</a></p>
+                                    </div>
+                        </div>
+
     </div>
-    <div class="filter__select">
-        <span class="filter__select--number">2</span>
-        <div class="filter__select--icon"><i class="fas fa-list-ul"></i></div>
-        <div class="filter__select--font">Composez votre menu</div>
-    </div>
-    <div class="filter__select">
-        <span class="filter__select--number">3</span>
-        <div class="filter__select--icon"><i class="fas fa-store"></i></div>
-        <div class="filter__select--font">Dégustez au restaurant</div>
-    </div>
-</div>
+</aside>
     
 <!-- Section 3 --> 
     
@@ -67,7 +77,7 @@
         <h1>Restaurants</h1>
     
                 <div class="card">
-                    <a href="#">
+                    <a href="menu_la_palette_du_gout.html">
                         <figure class="card__palette">
                             <img src="public/img/jay-wennington_small.jpg" alt="La palette du goût">
                         <figcaption>
@@ -121,7 +131,6 @@
                             <p>Folie-Méricourt</p>
                             </div>
                             <div class="picto_home"><span class="far fa-heart"></span></div>
-                            <div class="picto_home--gradient"><span class="far fa-heart"></span></div>
                         </figcaption>
                         </figure>
                     </a>
@@ -132,11 +141,17 @@
 
         <footer>
                 <div class="footer">
-                    <div class="logo_footer"><img src="public/img/ohmyfood@2x.svg" alt="ohmyfood"></div>
-                        <a href="#"><span class="fas fa-utensils">Proposer un restaurant</span></a>
-                        <a href="#"><span class="fas fa-hands-helping">Devenir partenaire</span></a>
-                        <a href="#">Mentions légales</a>
-                        <a href="mailto:name@email.com">Contact</a>
+                    <div class="logo__footer"><img src="public/img/ohmyfood@2x.svg" alt="ohmyfood"></div>
+                    <div class="link">
+                            <nav>
+                                <ul>
+                                    <li><a href="#"><span class="fas fa-utensils"></span>Proposer un restaurant</a></li>
+                                    <li><a href="#"><span class="fas fa-hands-helping"></span>Devenir partenaire</a></li>
+                                    <li><a href="#">Mentions légales</a></a></li>
+                                    <li><a href="mailto:name@email.com">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                 </div>
         </footer>   
 
