@@ -1,0 +1,80 @@
+.spinloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: spinloader 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    background: $color-secondary;
+    position: fixed;
+    bottom: 250px;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 999;
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    img{
+        align-items: center;
+    }
+  }
+  
+  %animatedbefore {
+    display: inline-block;
+    position: absolute;
+    border: 250px solid transparent;
+    border-top-color: $color-tertiary;
+  }
+  
+  %animatedafter {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    border: 2px solid transparent;
+    border-top-color: $color-tertiary;
+  }
+  
+  .loader {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    animation: loader 2s infinite;
+    overflow: hidden;
+    padding: 40px;
+    &::before {
+      content: "";
+      @extend %animatedbefore;
+      animation: loader 2s infinite;
+    }
+  
+    &::after {
+      content: "";
+      @extend %animatedafter;
+      animation: loader 2s infinite;
+    }
+    &__cover {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+    &__bar {
+      animation: loader 2s infinite;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 50%;
+      transform-origin: 100% 100%;
+    }
+  }
+  

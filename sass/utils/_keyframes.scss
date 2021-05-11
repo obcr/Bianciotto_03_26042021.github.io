@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+    from {
+      transform: scale(0.1);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes spinloader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: scale(1, 1);;
+    }
+  
+    100% {
+      transform: scale(3, 2);;
+    }
+  }
