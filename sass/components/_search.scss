@@ -1,10 +1,7 @@
-$color-back-light:  #C0C0C0;
-$color-back-light-m:  #ebebeb;
-
-.search-bar{
+.search-bar {
     height: 50px;
     display: flex;
-    background-color: $color-back-light-m;
+    background-color: $color-back-dark;
 }
 
 .search-bar__form {
@@ -26,6 +23,9 @@ $color-back-light-m:  #ebebeb;
     width: 100%;
     font-size: 17px;
     }
+    input:focus {
+        outline: none;
+   }
 }
 
 

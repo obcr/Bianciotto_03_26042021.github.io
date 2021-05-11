@@ -26,8 +26,11 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0;
-    background: linear-gradient(#f77dd4, #ab65fa);
+    width: 67%;
+    height: 62px;
+    margin-left: 31px;
+    margin-bottom: 25px;
+    background: $color-back-light;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -36,16 +39,38 @@
     padding: 0.5rem;
     padding-right: 4rem;
     border-radius: 1.5rem;
-    transform: scale(1);
-    transition: transform 400ms;
+    box-shadow: 0px 0px 12px -8px rgba(0,0,0,0.81);
     &:hover {
-        transform: scale(1.15);
+        background-color: $color-primary-light;
     }
     i{
-        padding-left: 10px;
+        padding-left: 22px;
         padding-right: 20px;
+        margin-left: 5px;
     }
     i:hover{
         color: #ab65fa;
+        
     }
+    a {
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+}
+
+.checkbox {
+display: flex;
+width: 15%;
+background-color: $color-tertiary;
+border-bottom-right-radius: 1em;
+border-top-right-radius: 1em;
+align-content: center;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+.btn-check {
+    font-size: 21px;
+    color: #FFF;
 }

@@ -1,25 +1,12 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-
-$color-back-light:  #C0C0C0;
-$color-back-dark:  #DCDCDC;
-$color-back-footer: #696969;
-
-#asidefilter {
-  background-color: rgb(48, 87, 37);
-  border: solid 1px blue;
-  h3{
-    margin: 0%;
-    font-size: 30px;
-  }
-}
-
 .filter {
   display: flex;
   flex-direction: row;
   align-items: center;
   &__num{
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +15,12 @@ $color-back-footer: #696969;
 	  width: 25px;
 	  height: 25px;
     color: white;
+    font-family: 'Roboto', sans-serif;
     background-color: $color-primary;
 }
   .nounderline {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 }
 
