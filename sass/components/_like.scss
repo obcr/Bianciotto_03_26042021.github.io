@@ -1,0 +1,51 @@
+%likeanimated {
+  transition: 0.5s 0s ease;
+}
+
+.picto_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .ihover {
+      position: absolute;
+      opacity: 0;
+      &:hover {
+        overflow: hidden;
+        @include gradient;
+        opacity: 1;
+        z-index: 999;
+      }
+    }
+    .outline {
+      opacity: 1;
+      @extend %likeanimated;
+      &:hover {
+        opacity: 0;
+        @extend %likeanimated;
+      }
+    }
+  }
+
+.title__picto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .ihover {
+      position: absolute;
+      opacity: 0;
+      &:hover {
+        overflow: hidden;
+        @include gradient;
+        opacity: 1;
+        z-index: 999;
+      }
+    }
+    .outline {
+      opacity: 1;
+      @extend %likeanimated;
+      &:hover {
+        opacity: 0;
+        @extend %likeanimated;
+      }
+    }
+  }

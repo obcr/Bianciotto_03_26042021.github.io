@@ -1,6 +1,15 @@
 .card {
-    a {
-        text-decoration: none;
+    &__1 a {
+        @include text-deco-none;
+    }
+    &__2 a {
+        @include text-deco-none;
+    }
+    &__3 a {
+        @include text-deco-none;
+    }
+    &__4 a {
+        @include text-deco-none;
     }
 }
 
@@ -48,4 +57,5 @@
 .picto_home {
     padding-right: 20px;
     font-size: 1.375rem;
+    color: $color-primary;
 }

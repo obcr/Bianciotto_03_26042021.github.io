@@ -16,6 +16,7 @@
     transition: transform 400ms;
     &:hover {
         transform: scale(1.15);
+        box-shadow: 0 4px 12px #757575;
     }
     a {
         color: #fff;
@@ -27,12 +28,13 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    width: 67%;
+    width: auto;
     height: 62px;
     margin-left: 31px;
     margin-bottom: 25px;
     background: $color-back-light;
     cursor: pointer;
+    margin-right: 20px;
     padding: 0.5rem;
     padding-right: 4rem;
     border-radius: 1.5rem;
@@ -48,19 +50,22 @@
     }
 }
 
-.checkbox {
-display: flex;
-width: 15%;
-background-color: $color-tertiary;
-border-bottom-right-radius: 1em;
-border-top-right-radius: 1em;
-align-content: center;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-}
-
 .btn-check {
     font-size: 21px;
     color: #FFF;
+}
+
+.checkbox {
+display: none;
+&:hover {
+    display: flex;
+    width: 15%;
+    background-color: $color-tertiary;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 }

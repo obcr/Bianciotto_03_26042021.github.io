@@ -36,10 +36,8 @@
         text-decoration: none;
         color: black;
     }
-    h3 {
-        font-weight: 400;
-        margin-top: 20px;
-        margin-bottom: 0%;
+    span {
+        font-weight: 700;
     }
 }
 
@@ -68,10 +66,11 @@
     margin-left: 20px;
     margin-right: 30px;
     h2 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
-    span {
-        font-size: 2em;
+    &__picto, .fa-heart {
+        font-size: 1.3em;
+        color: $color-primary;
     }
 }
 

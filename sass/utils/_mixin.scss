@@ -1,0 +1,13 @@
+/* mixin text decoration none */
+
+@mixin text-deco-none {
+    text-decoration: none;
+}
+
+/* like color */
+
+@mixin gradient {
+    background: linear-gradient(#e66465, #9198e5);
+  }
+  
+

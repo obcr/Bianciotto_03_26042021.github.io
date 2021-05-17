@@ -1,80 +1,66 @@
-.spinloader {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    animation: spinloader 3s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    background: $color-secondary;
+/* card fade index */
+
+.card__1{
+    animation:fade-in-top .3s cubic-bezier(.175,.885,.32,1.275) 4.8s both;
+}
+.card__2{
+    animation:fade-in-top .3s cubic-bezier(.175,.885,.32,1.275) 5.2s both;
+}
+.card__3{
+    animation:fade-in-top .3s cubic-bezier(.175,.885,.32,1.275) 5.4s both;
+}
+.card__4{
+    animation:fade-in-top .3s cubic-bezier(.175,.885,.32,1.275) 5.6s both;
+}
+
+/* cartouche fade main */
+
+.starter{
+    animation:fade-in-fwd 1s cubic-bezier(.39,.575,.565,1.000) 1s both;
+}
+.dishes{
+    animation:fade-in-fwd 1s cubic-bezier(.39,.575,.565,1.000) 1.4s both;
+}
+.dessert{
+    animation:fade-in-fwd .6s cubic-bezier(.39,.575,.565,1.000) 1.8s both;
+}
+    
+/* spinloader */
+
+.spinloader{
+    animation:color-turn 5s linear 4s alternate both;
     position: fixed;
-    bottom: 250px;
+    bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     text-align: center;
     z-index: 999;
-    &::before {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
+    .spinloader__border {
+        display: flex;
+        margin-top: 312px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        animation: ola 1s cubic-bezier(.25,.46,.45,.94) 1s both;
+        animation: color-turn 6s linear 0.1s alternate both;
     }
-    img{
-        align-items: center;
-    }
-  }
-  
-  %animatedbefore {
-    display: inline-block;
-    position: absolute;
-    border: 250px solid transparent;
-    border-top-color: $color-tertiary;
-  }
-  
-  %animatedafter {
-    display: inline-block;
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
-    top: 5px;
-    border: 2px solid transparent;
-    border-top-color: $color-tertiary;
-  }
-  
-  .loader {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    animation: loader 2s infinite;
-    overflow: hidden;
-    padding: 40px;
-    &::before {
-      content: "";
-      @extend %animatedbefore;
-      animation: loader 2s infinite;
-    }
-  
-    &::after {
-      content: "";
-      @extend %animatedafter;
-      animation: loader 2s infinite;
-    }
-    &__cover {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-    }
-    &__bar {
-      animation: loader 2s infinite;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 50%;
-      height: 50%;
-      transform-origin: 100% 100%;
-    }
-  }
-  
+}
+
+.scale-in-hor-center{
+    animation: ola 1s cubic-bezier(.25,.46,.45,.94) 2s both;
+    animation: flip-in-ver-right 4s cubic-bezier(.97,1.5,.79,4) 1 alternate both;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(1);
+}
+
+
+
+
+
+

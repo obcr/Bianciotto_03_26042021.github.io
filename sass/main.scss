@@ -1,8 +1,10 @@
 @import "./utils/variable";
-@import "./utils/animations";
-@import "./utils/keyframes";
+@import "./utils/_mixin";
+@import "./utils/_keyframes";
+@import "./utils/_animations";
 @import "./base/base";
 @import "./base/typography";
+@import "./components/like";
 @import "./components/button";
 @import "./components/card";
 @import "./components/search";
