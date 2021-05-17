@@ -7,7 +7,7 @@
 /* like color */
 
 @mixin gradient {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient($color-primary, $color-secondary);
   }
   
 

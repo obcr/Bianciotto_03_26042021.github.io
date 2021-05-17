@@ -1,5 +1,6 @@
-%likeanimated {
-  transition: 0.5s 0s ease;
+
+%fill {
+  transition: 0.8s 0.2s ease;
 }
 
 .picto_home {
@@ -14,14 +15,16 @@
         @include gradient;
         opacity: 1;
         z-index: 999;
+        @extend %fill;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
       }
     }
     .outline {
       opacity: 1;
-      @extend %likeanimated;
       &:hover {
         opacity: 0;
-        @extend %likeanimated;
       }
     }
   }
@@ -38,14 +41,16 @@
         @include gradient;
         opacity: 1;
         z-index: 999;
+        @extend %fill;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
       }
     }
     .outline {
       opacity: 1;
-      @extend %likeanimated;
       &:hover {
         opacity: 0;
-        @extend %likeanimated;
       }
     }
   }

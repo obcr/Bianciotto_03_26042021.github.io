@@ -24,12 +24,17 @@
     opacity: 1; } }
 @keyframes color-turn {
   0% {
+    background: #99E2D0;
+    opacity: 1;
+    transition: 0.8s 0.2s ease; }
+  50% {
     background: #9356DC;
     opacity: 1; }
   100% {
     background: #FF79DA;
     z-index: -10;
-    opacity: 0; } }
+    opacity: 0;
+    transition: 0.8s 0.2s ease; } }
 @keyframes fade-in-top {
   0% {
     transform: translateY(-50px);
@@ -150,8 +155,8 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.picto_home .outline, .picto_home .outline:hover, .title__picto .outline, .title__picto .outline:hover {
-  transition: 0.5s 0s ease; }
+.picto_home .ihover:hover, .title__picto .ihover:hover {
+  transition: 0.8s 0.2s ease; }
 
 .picto_home {
   display: flex;
@@ -162,9 +167,12 @@ p {
     opacity: 0; }
     .picto_home .ihover:hover {
       overflow: hidden;
-      background: linear-gradient(#e66465, #9198e5);
+      background: linear-gradient(#9356DC, #FF79DA);
       opacity: 1;
-      z-index: 999; }
+      z-index: 999;
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text; }
   .picto_home .outline {
     opacity: 1; }
     .picto_home .outline:hover {
@@ -179,9 +187,12 @@ p {
     opacity: 0; }
     .title__picto .ihover:hover {
       overflow: hidden;
-      background: linear-gradient(#e66465, #9198e5);
+      background: linear-gradient(#9356DC, #FF79DA);
       opacity: 1;
-      z-index: 999; }
+      z-index: 999;
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text; }
   .title__picto .outline {
     opacity: 1; }
     .title__picto .outline:hover {
