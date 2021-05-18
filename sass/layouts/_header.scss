@@ -3,6 +3,12 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 3px 1px #b3b3b3;
+    @include desktop-only {
+      width: 25%;
+      padding-right: 51%;
+      border-right: 0.2rem solid $color-back-light;
+      box-shadow:none;
+    }
 
     &__header {
       width: 100%;

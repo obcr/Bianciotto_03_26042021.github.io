@@ -2,6 +2,12 @@
     height: 50px;
     display: flex;
     background-color: $color-back-dark;
+    @include desktop-only {
+        background-color: transparent;
+        padding-left: 20px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
 }
 
 .search-bar__form {
