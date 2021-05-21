@@ -6,8 +6,11 @@ footer  {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 89.33%;
-    height: 195px;
     margin: auto;
+    @include desktop-only {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
 }
 
 .logo__footer {
@@ -16,13 +19,14 @@ footer  {
     color: #fff;
     filter: invert(1);
     img{
-        width:30%
+        width:120px
     }
 }
 
 .link {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
     ul{
         margin: 0%;
         padding: 0%;

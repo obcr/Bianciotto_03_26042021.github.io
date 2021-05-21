@@ -1,7 +1,6 @@
 .btn {
     display: inline-block;
     flex-wrap: nowrap;
-    width: 58.13%;
     margin: auto;
     background: linear-gradient(#f77dd4, #ab65fa);
     @include boxshadow;
@@ -69,3 +68,4 @@ display: none;
     flex-direction: row;
 }
 }
+

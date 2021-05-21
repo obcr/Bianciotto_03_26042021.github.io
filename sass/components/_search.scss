@@ -1,22 +1,21 @@
 .search-bar {
     height: 50px;
     display: flex;
+    justify-content: center;
     background-color: $color-back-dark;
     @include desktop-only {
         background-color: transparent;
-        padding-left: 20px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        margin-left: 0%;
       }
 }
 
 .search-bar__form {
     display: flex;
-    flex-direction: row;
+    align-items: stretch;
     margin: auto;
     i {
         padding-right: 10px;
-        padding-left: 10px;
+        padding-left: 64px;
         font-size: 1.2em;
         color:rgb(0, 0, 0);
     }
@@ -26,7 +25,6 @@
     input {
     background-color: transparent;
     border: 0;
-    width: 100%;
     font-size: 17px;
     }
     input:focus {

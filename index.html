@@ -12,8 +12,7 @@
     <body>
         
 <!-- spinloader -->
-
-        <div class="fade-out">
+       
             <div class="spinloader">
                 <div class="spinloader__border"> 
                     <img class="scale-in-hor-center" src="public/img/ohmyfood@2x.svg" alt="spinloader"/>
@@ -23,6 +22,7 @@
 <!-- Header -->
 
     <header>
+        <div class="header-home">
         <div class="logo">
             <div class="logo__header">
                 <a href="index.html"><img src="public/img/ohmyfood@2x.svg" alt="ohmyfood"></a>
@@ -38,6 +38,7 @@
                         </div> 
                     </div> 
             </div>
+        </div>
     </header>
 
 <!-- Section 1 -->
@@ -53,13 +54,13 @@
 <!-- Aside -->  
 
 <aside>
+    <h3>Fonctionnement</h3>
     <div id="asidefilter">
-        <h3>Fonctionnement</h3>
                 <div class="filter">
                     <div class="filter__num">1</div>
                     <a href="#" class="nounderline">
                         <div class="btn-filter">
-                            <i class="fas fa-store"></i>
+                            <i class="fas fa-mobile-alt"></i>
                             <p>Choisissez un restaurant</p>
                             </div>
                     </a>
@@ -68,7 +69,7 @@
                         <div class="filter__num">2</div>
                         <a href="#" class="nounderline">
                             <div class="btn-filter">
-                                <i class="fas fa-store"></i>
+                                <i class="fas fa-list"></i>
                                 <p>Composez un menu</p>
                                 </div>
                         </a>
@@ -90,29 +91,29 @@
     
     <section>
         <h3>Restaurants</h3>
-    
+    <div class="section">
                 <div class="card__1">
                     <a href="menu_la_palette_du_gout.html">
                         <figure class="card__palette">
-                            <img src="public/img/jay-wennington_small.jpg" alt="La palette du goût">
+                            <div class="popup"><img src="public/img/jay-wennington_small.jpg" alt="La palette du goût"><span>Nouveau</span></div>
                         <figcaption>
                             <div class="name">
-                            <h3>palette du goût</h3>
-                            <p>Ménilmontant</p>
+                                <h3>palette du goût</h3>
+                                <p>Ménilmontant</p>
                             </div>
                             <div class="picto_home">
                                 <i class="far fa-heart outline"></i>
                                 <i class="fas fa-heart ihover"></i>
                             </div>
                         </figcaption>
-                        </figure>
-                    </a>
+                    </figure>
+                </a>
                 </div>
 
                 <div class="card__2">
                     <a href="menu_la_note_enchantee.html">
                         <figure class="card__palette">
-                            <img src="public/img/stil-u2_small.jpg" alt="La note enchantée">
+                            <div class="popup"><img src="public/img/stil-u2_small.jpg" alt="La note enchantée"><span>Nouveau</span></div>
                         <figcaption>
                             <div class="name">
                             <h3>La note enchantée</h3>
@@ -130,7 +131,7 @@
                 <div class="card__3">
                     <a href="menu_a_la_francaise.html">
                         <figure class="card__palette">
-                            <img src="public/img/toa-heftiba_small.jpg" alt="À la française">
+                            <div class="popup"><img src="public/img/toa-heftiba_small.jpg" alt="À la française"></div>
                         <figcaption>
                             <div class="name">
                             <h3>À la française</h3>
@@ -148,7 +149,7 @@
                 <div class="card__4">
                     <a href="menu_le_delice_des_sens.html">
                         <figure class="card__palette">
-                            <img src="public/img/louis-hansel-shotsoflouis_small.jpg" alt="Le délice des sens">
+                            <div class="popup"><img src="public/img/louis-hansel-shotsoflouis_small.jpg" alt="Le délice des sens"></div>
                         <figcaption>
                             <div class="name">
                             <h3>Le délice des sens</h3>
@@ -161,7 +162,8 @@
                         </figcaption>
                         </figure>
                     </a>
-                </div>
+                </div>                
+    </div>
     </section>
 
 <!-- Footer -->     

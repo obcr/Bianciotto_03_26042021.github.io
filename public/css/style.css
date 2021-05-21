@@ -83,16 +83,16 @@
     transform: translate(1px, 0); } }
 /* card fade index */
 .card__1 {
-  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 4.8s both; }
+  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 6s both; }
 
 .card__2 {
-  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 5.2s both; }
+  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 6.5s both; }
 
 .card__3 {
-  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 5.4s both; }
+  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 7s both; }
 
 .card__4 {
-  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 5.6s both; }
+  animation: fade-in-top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 7.4s both; }
 
 /* cartouche fade main */
 .starter {
@@ -204,7 +204,6 @@ p {
 .btn {
   display: inline-block;
   flex-wrap: nowrap;
-  width: 58.13%;
   margin: auto;
   background: linear-gradient(#f77dd4, #ab65fa);
   box-shadow: 0 4px 12px #b3b3b3;
@@ -279,20 +278,38 @@ p {
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+  border-radius: 1em;
   box-shadow: 0 4px 12px #b3b3b3; }
-  .card__palette img {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    max-height: 175px;
-    object-fit: cover; }
   .card__palette figcaption {
     display: flex;
     justify-content: space-between;
     height: 57px;
-    padding-top: 15px;
-    background-color: #fff;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em; }
+    padding-top: 15px; }
+    @media only screen and (min-width: 1024px) {
+      .card__palette figcaption {
+        min-height: 75px; } }
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative; }
+  .popup img {
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    max-height: 175px;
+    object-fit: cover; }
+  .popup span {
+    position: absolute;
+    z-index: 999;
+    background-color: #99E2D0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 3px 10px;
+    margin-top: 10px;
+    margin-right: 10px; }
 
 .name {
   display: flex;
@@ -311,32 +328,33 @@ p {
   padding-right: 20px;
   font-size: 1.375rem;
   color: #9356DC; }
+  @media only screen and (min-width: 1024px) {
+    .picto_home {
+      margin-bottom: 55px; } }
 
 .search-bar {
   height: 50px;
   display: flex;
+  justify-content: center;
   background-color: #EAEAEA; }
   @media only screen and (min-width: 1024px) {
     .search-bar {
       background-color: transparent;
-      padding-left: 20px;
-      padding-top: 10%;
-      padding-bottom: 10%; } }
+      margin-left: 0%; } }
 
 .search-bar__form {
   display: flex;
-  flex-direction: row;
+  align-items: stretch;
   margin: auto; }
   .search-bar__form i {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 64px;
     font-size: 1.2em;
     color: black; }
 
 .search-bar__form--field input {
   background-color: transparent;
   border: 0;
-  width: 100%;
   font-size: 17px; }
 .search-bar__form--field input:focus {
   outline: none; }
@@ -430,6 +448,16 @@ p {
   background: #99E2D0;
   animation: roll-in-right ease 0.5s 1; }
 
+@media only screen and (min-width: 1024px) {
+  .header-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px #b3b3b3; } }
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -437,9 +465,7 @@ p {
   box-shadow: 0 3px 1px #b3b3b3; }
   @media only screen and (min-width: 1024px) {
     .logo {
-      width: 25%;
-      padding-right: 51%;
-      border-right: 0.2rem solid #F6F6F6;
+      width: 250px;
       box-shadow: none; } }
   .logo__header {
     width: 100%;
@@ -450,6 +476,24 @@ p {
       width: 65%;
       padding-top: 15px; }
   .logo__menu {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px; }
+
+.logob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 1px #b3b3b3; }
+  .logob__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; }
+    .logob__header img {
+      height: 63px;
+      width: 65%;
+      padding-top: 15px; }
+  .logob__menu {
     width: 70%;
     text-align: center;
     margin-bottom: 10px; }
@@ -470,8 +514,11 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   width: 89.33%;
-  height: 195px;
   margin: auto; }
+  @media only screen and (min-width: 1024px) {
+    .footer {
+      margin-right: 25px;
+      margin-left: 25px; } }
 
 .logo__footer {
   padding-top: 1.25em;
@@ -479,11 +526,12 @@ footer {
   color: #fff;
   filter: invert(1); }
   .logo__footer img {
-    width: 30%; }
+    width: 120px; }
 
 .link {
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-bottom: 50px; }
   .link ul {
     margin: 0%;
     padding: 0%;
@@ -505,13 +553,21 @@ footer {
   height: 100%;
   width: 100%;
   margin: auto; }
-  .menu-img img {
-    object-fit: cover; }
+  @media only screen and (min-width: 1024px) {
+    .menu-img {
+      height: 300px; }
+      .menu-img img {
+        object-fit: cover; } }
+    @media only screen and (min-width: 1024px) and (min-width: 1024px) {
+      .menu-img img {
+        object-fit: cover;
+        object-position: 0 90%; } }
 
 #menu {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: -50px;
@@ -523,11 +579,23 @@ footer {
     font-family: 'Shrikhand', cursive;
     font-weight: bolder; }
 
+@media only screen and (min-width: 1024px) {
+  .menu-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; } }
+
 .starter, .dishes, .dessert {
   display: flex;
   flex-direction: column;
   padding-right: 20px;
   padding-left: 20px; }
+  @media only screen and (min-width: 1024px) {
+    .starter, .dishes, .dessert {
+      box-sizing: border-box;
+      width: 33%; } }
   .starter a, .dishes a, .dessert a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -568,15 +636,6 @@ footer {
   padding: 20px;
   margin-bottom: 60px; }
 
-@media only screen and (min-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-    box-shadow: 0 3px 1px #b3b3b3; } }
-
 section {
   display: flex;
   flex-direction: column;
@@ -587,6 +646,14 @@ section {
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 30px; }
+
+.section {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 1024px) {
+    .section {
+      display: flex;
+      flex-direction: row; } }
 
 .filter__select {
   display: flex;
@@ -601,16 +668,17 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  padding-bottom: 30px; }
+  margin: auto;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px; }
   .menu h1 {
     text-align: center;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: auto;
     font-size: 29px;
-    margin-top: 50px;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    margin-top: 50px; }
   .menu h2 {
     text-align: center;
     margin-bottom: 0%;
@@ -622,10 +690,30 @@ section {
 #asidefilter {
   display: flex;
   flex-direction: column; }
-  #asidefilter h3 {
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    font-size: 30px; }
+  @media only screen and (min-width: 1024px) {
+    #asidefilter {
+      flex-direction: row;
+      justify-content: center; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #asidefilter {
+      flex-direction: row;
+      justify-content: space-evenly; } }
+
+aside h3 {
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 25px; }
+  @media only screen and (min-width: 1024px) {
+    aside h3 {
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+@media only screen and (min-width: 1024px) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

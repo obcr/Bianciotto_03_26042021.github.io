@@ -4,15 +4,23 @@
     height: 100%;
     width: 100%;
     margin: auto; 
+    @include desktop-only {
+        height: 300px;
     img {
         object-fit: cover;
+        @include desktop-only {
+            object-fit: cover;
+            object-position: 0 90%;
     }
   }
+}
+}
 
 #menu {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: -50px;
@@ -26,11 +34,25 @@
     }
 }
 
+.menu-box {
+    @include desktop-only {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+}
+}
+
 .starter, .dishes, .dessert {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
+    @include desktop-only {
+        box-sizing: border-box;
+        width: 33%;
+}
     a {
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
