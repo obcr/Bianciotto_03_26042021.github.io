@@ -30,6 +30,8 @@
 .spinloader{
     animation: color-turn 5s linear 4s alternate both;
     position: fixed;
+    height: auto;
+    width: auto;
     bottom: 0;
     left: 0;
     right: 0;
