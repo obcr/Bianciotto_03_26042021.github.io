@@ -48,15 +48,15 @@
 /*Animation de l'icone validation */
 @keyframes roll-in-right {
   0% {
-    transform: rotade(-90deg); }
+    transform: rotate(-90deg); }
   20% {
-    transform: rotade(-75deg) scale(1.03); }
+    transform: rotate(-75deg) scale(1.03); }
   40% {
-    transform: rotade(-60deg) scale(1.08); }
+    transform: rotate(-60deg) scale(1.08); }
   60% {
     transform: rotate(-45deg) scale(1.15); }
   80% {
-    transform: rotade(-30deg) scale(1.08); }
+    transform: rotate(-30deg) scale(1.08); }
   100% {
     transform: rotate(5deg) scale(1); } }
 @keyframes slide-right-checkbox {
@@ -175,7 +175,6 @@ p {
       overflow: hidden;
       opacity: 1;
       z-index: 999;
-      background-clip: text;
       color: transparent;
       -webkit-background-clip: text; }
   .picto_home .outline {
@@ -195,7 +194,6 @@ p {
       overflow: hidden;
       opacity: 1;
       z-index: 999;
-      background-clip: text;
       color: transparent;
       -webkit-background-clip: text; }
   .title__picto .outline {
