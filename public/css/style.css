@@ -305,8 +305,10 @@ p {
     position: absolute;
     z-index: 999;
     background-color: #99E2D0;
+    color: #139273;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    border-radius: 2px;
     padding: 3px 10px;
     margin-top: 10px;
     margin-right: 10px; }
@@ -390,7 +392,7 @@ p {
   margin-bottom: 20px;
   overflow: hidden; }
   .cartouche:hover {
-    box-shadow: 0 3px 1px #737373; }
+    box-shadow: 0 4px 12px #969696; }
   .cartouche__text {
     display: flex;
     flex-grow: 1;
@@ -461,20 +463,34 @@ p {
 .logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 3px 1px #b3b3b3; }
+  align-items: center; }
   @media only screen and (min-width: 1024px) {
     .logo {
       width: 250px;
       box-shadow: none; } }
   .logo__header {
+    display: flex;
+    justify-content: center;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px; }
-    .logo__header img {
-      height: 63px;
-      width: 65%;
-      padding-top: 15px; }
+    align-items: flex-end;
+    padding-bottom: 10px;
+    padding-top: 18px;
+    box-shadow: 0 1px 5px #3e3e3e73; }
+    @media only screen and (min-width: 1024px) {
+      .logo__header {
+        box-shadow: none; }
+        .logo__header img {
+          height: 63px;
+          width: 65%;
+          padding-top: 15px;
+          z-index: -1; } }
+    @media only screen and (min-width: 1024px) and (min-width: 1024px) {
+      .logo__header img {
+        padding: 0%;
+        width: 90%;
+        margin-top: -4px; } }
+
   .logo__menu {
     width: 70%;
     text-align: center;
@@ -482,28 +498,22 @@ p {
 
 .logob {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 3px 1px #b3b3b3; }
-  .logob__header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px; }
-    .logob__header img {
-      height: 63px;
-      width: 65%;
-      padding-top: 15px; }
+  box-shadow: 0 2px 2px #565656bd; }
   .logob__menu {
-    width: 70%;
+    width: 90%;
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-top: 15px; }
+    .logob__menu img {
+      width: 160px; }
 
 .fa-arrow-left:before {
+  display: flex;
   content: "\f060";
-  margin-top: 0.8em;
-  margin-left: 20px;
-  position: absolute;
   font-size: 1.1em;
+  margin-top: 6px;
   color: black; }
 
 footer {
@@ -552,7 +562,9 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  z-index: -100;
+  position: relative; }
   @media only screen and (min-width: 1024px) {
     .menu-img {
       height: 300px; }

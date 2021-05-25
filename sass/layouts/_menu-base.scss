@@ -4,6 +4,8 @@
     height: 100%;
     width: 100%;
     margin: auto; 
+    z-index: -100;
+    position: relative;
     @include desktop-only {
         height: 300px;
     img {
