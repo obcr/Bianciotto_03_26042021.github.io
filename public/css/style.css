@@ -652,7 +652,7 @@ footer {
 section {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: burlywood;
   padding-bottom: 70px; }
   section h3 {
     margin-left: 20px;
